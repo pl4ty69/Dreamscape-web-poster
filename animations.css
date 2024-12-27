@@ -1,0 +1,49 @@
+@keyframes pulse{
+    from{color:rgb(255, 255, 255);}
+    to{color:rgba(255, 255, 255, 0.5);}
+}
+
+@keyframes sun-move{
+    from{bottom: 59%; left: 62%;}
+    to{bottom: 62%; left: 63%;}
+}
+
+@keyframes sun-rotate{
+    from{rotate: 360deg;}
+    to{rotate: 0deg;}
+}
+
+@keyframes earth-move{
+    from{bottom: 22%; right: 36%;}
+    to{bottom: 25%; right: 37%;}
+}
+
+@keyframes earth-rotate{
+    from{rotate: 0deg;}
+    to{rotate: 360deg;}
+}
+
+@keyframes computer-move{
+    from{top: 35%;}
+    to{top: 32%;}
+}
+
+@keyframes computer-rotate{
+    0%{rotate: 10deg;}
+    100%{rotate: -13deg;}
+}
+
+@keyframes ext-move{
+    from{left: 76%; bottom: 85%;}
+    to{left: 17%; bottom: 69%;}
+}
+
+@keyframes ext-rotate{
+    from{rotate: 0deg;}
+    to{rotate: 760deg;}
+}
+
+@keyframes window-appear{
+    from{bottom: 26%; opacity: 0;}
+    to{bottom: 33%; opacity: 1;}
+}
