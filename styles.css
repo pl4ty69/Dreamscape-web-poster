@@ -2,7 +2,7 @@
 
 body {
     height: 100%; margin: 0; padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .vid1{
@@ -36,14 +36,19 @@ body {
 }
 
 .txt1{
-    font-family: 'Teletactile', sans-serif; font-size: 1.2vw; 
     position: absolute; top: 5%; left: 50%; transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, 0.3);
     z-index: 5;
+    
+    @media screen and (min-width: 768px){
+        font-family: 'Teletactile', sans-serif; font-size: 1.2vw;
+    }
+    @media screen and (max-width: 768px){
+        font-family: 'Teletactile', sans-serif; font-size: 4vw;
+    }
 }
 
 .lobby-btn{
-    font-family: 'Teletactile', sans-serif; font-size: 1.2vw;
     position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%);
     border: none;
     outline: none;
@@ -58,30 +63,32 @@ body {
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-delay: 0s;
-}
 
-.earth{
-    position: absolute;
-    display: block;
-    width: 120%;
-    height: auto;
-    bottom: 22%;
-    right: 36%;
-    z-index: 3;
-    animation: earth-move 4s alternate ease-in-out, earth-rotate 100s;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+    @media screen and (min-width: 768px){
+        font-family: 'Teletactile', sans-serif; font-size: 1.2vw;
+    }
+    @media screen and (max-width: 768px){
+        font-family: 'Teletactile', sans-serif; font-size: 4vw;
+    }
 }
 
 #trigger1{
     position: absolute;
     display: block;
-    width: 58%;
     height: auto;
-    bottom: 35%;
-    right: 69%;
     z-index: 5;
     opacity: 0;
+
+    @media screen and (min-width: 768px){
+        width: 58%;
+        bottom: 35%;
+        right: 69%;
+    }
+    @media screen and (max-width: 768px){
+        width: 58%;
+        bottom: 23%;
+        right: 69%;
+    }
 }
 
 #trigger1:hover + #window1{
@@ -91,12 +98,20 @@ body {
 #trigger2{
     position: absolute;
     display: block;
-    width: 33%;
     height: auto;
-    bottom: 60%;
-    right: -12%;
     z-index: 5;
     opacity: 0;
+
+    @media screen and (min-width: 768px){
+        width: 33%;
+        bottom: 60%;
+        right: -12%;
+    }
+    @media screen and (max-width: 768px){
+        width: 51%;
+        bottom: -4%;
+        right: -7%;
+    }
 }
 
 #trigger2:hover + #window2{
@@ -106,12 +121,20 @@ body {
 #trigger3{
     position: absolute;
     display: block;
-    width: 37%;
     height: auto;
-    bottom: -11%;
-    right: -7%;
     z-index: 5;
     opacity: 0;
+
+    @media screen and (min-width: 768px){
+        width: 37%;
+        bottom: -11%;
+        right: -7%;
+    }
+    @media screen and (max-width: 768px){
+        width: 51%;
+        bottom: 63%;
+        right: 25%;
+    }
 }
 
 #trigger3:hover + #window3{
@@ -121,71 +144,152 @@ body {
 #window1{
     position: absolute;
     display: block;
-    width: 30%;
     height: auto;
-    bottom: 33%;
-    right: 35%;
     z-index: 5;
     opacity: 0;
+
+    @media screen and (min-width: 768px){
+        width: 30%;
+        bottom: 33%;
+        right: 35%;
+    }
+    @media screen and (max-width: 768px){
+        width: 77%;
+        bottom: 38%;
+        right: 12%;
+    }
 }
 
 #window2{
     position: absolute;
     display: block;
-    width: 30%;
     height: auto;
-    bottom: 33%;
-    right: 35%;
     z-index: 5;
     opacity: 0;
+
+    @media screen and (min-width: 768px){
+        width: 30%;
+        bottom: 33%;
+        right: 35%;
+    }
+    @media screen and (max-width: 768px){
+        width: 77%;
+        bottom: 38%;
+        right: 12%;
+    }
 }
 
 #window3{
     position: absolute;
     display: block;
-    width: 30%;
     height: auto;
-    bottom: 33%;
-    right: 35%;
     z-index: 5;
     opacity: 0;
+
+    @media screen and (min-width: 768px){
+        width: 30%;
+        bottom: 33%;
+        right: 35%;
+    }
+    @media screen and (max-width: 768px){
+        width: 77%;
+        bottom: 38%;
+        right: 12%;
+    }
 }
 
 .sun{
     position: absolute;
     display: block;
-    width: 70%;
     height: auto;
-    bottom: 59%;
-    left: 62%;
     z-index: 3;
-    animation: sun-move 3s alternate ease-in-out, sun-rotate 50s;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+
+    @media screen and (min-width: 768px){
+        width: 70%;
+        bottom: 59%;
+        left: 62%;
+        animation: sun-move 3s alternate ease-in-out, sun-rotate 50s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+    }
+    @media screen and (max-width: 768px){
+        width: 100%;
+        bottom: -5%;
+        left: 32%;
+        animation: mobile-spin 20s infinite linear;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
 }
 
 .computer{
     position: absolute;
     display: block;
-    width: 84%;
     height: auto;
-    left: 50%;
-    top: 35%;
     z-index: 3;
-    animation: computer-rotate 5s alternate ease-in-out, computer-move 2.5s alternate ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
+
+    @media screen and (min-width: 768px){
+        width: 84%;
+        left: 50%;
+        top: 35%;
+        animation: computer-rotate 5s alternate ease-in-out, computer-move 2.5s alternate ease-in-out;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+    }
+    @media screen and (max-width: 768px){
+        width: 125%;
+        left: -13%;
+        top: 2%;        
+        animation: mobile-computer 3s infinite alternate ease-in-out;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.earth{
+    position: absolute;
+    display: block;
+    height: auto;
+    z-index: 3;
+
+    @media screen and (min-width: 768px){
+        width: 120%;
+        bottom: 22%;
+        right: 36%;
+        animation: earth-move 4s alternate ease-in-out, earth-rotate 100s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+    }
+    @media screen and (max-width: 768px){
+        width: 120%;
+        bottom: 20%;
+        right: 36%;
+        animation: mobile-spin 60s infinite linear;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
 }
 
 .exting{
     position: absolute;
     display: block;
-    width: 10%;
     height: auto;
-    left: 100%;
-    bottom: 74%;
     z-index: 2;
-    animation: ext-move 15s linear, ext-rotate 16s linear;
-    animation-delay: 15s;
-    animation-fill-mode: forwards;
+
+    @media screen and (min-width: 768px){
+        width: 10%;
+        left: 100%;
+        bottom: 74%;
+        animation: ext-move 15s linear, ext-rotate 16s linear;
+        animation-delay: 15s;
+        animation-fill-mode: forwards;
+    }
+    @media screen and (max-width: 768px){
+        width: 55%;
+        left: 56%;
+        bottom: 50%;
+        animation: mobile-spin 15s infinite linear;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
 }

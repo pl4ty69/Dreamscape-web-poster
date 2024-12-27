@@ -11,7 +11,8 @@
 <body>
     <div class="home-container">
         <video class="vid1" autoplay muted loop width="1920" height="1080">
-            <source src="files/home1080p.mp4" type="video/mp4">
+            <source src="files/home1080p.mp4" type="video/mp4" media="(min-width: 768px)">
+            <source src="files/home_mobile.mp4" type="video/mp4" media="(max-width: 768px)">
         </video>
         <div class="txt1"> Fullscreen recommended </div>
         <a type="button" autofocus href="#lobby" class="lobby-btn"> Press ENTER </a>
@@ -19,7 +20,8 @@
 
     <div id="lobby" class="lobby-container">
         <video class="vid2" autoplay muted loop width="1920" height="1080">
-            <source src="files/lobby1080p.mp4" type="video/mp4">
+            <source src="files/lobby1080p.mp4" type="video/mp4" media="(min-width: 768px)">
+            <source src="files/lobby_mobile.mp4" type="video/mp4" media="(max-width: 768px)">
         </video>
         <img class="earth" src="files/shitty earth.png" width="500" height="500">
         <img id="trigger1" src="files/trigger1.png" width="500" height="500">
