@@ -1,7 +1,9 @@
 @font-face {
     font-family: 'Teletactile';
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     src: local('Teletactile'), url('https://fonts.cdnfonts.com/s/36145/Teletactile-3zavL.woff') format('woff');
-    src: url('files/TeletactileRus.ttf') format('truetype');
-}
+    src: url('/files/TeletactileRus.ttf') format('truetype');
+    src: url('/files/teletactilerus-webfont.woff2') format('woff2');
+    src: url('/files/teletactilerus-webfont.woff') format('woff');
+} 

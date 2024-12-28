@@ -57,3 +57,8 @@
     from{bottom: 26%; opacity: 0;}
     to{bottom: 33%; opacity: 1;}
 }
+
+@keyframes hover-effect{
+    from{border-radius: 0%;}
+    to{border-radius: 10%;}
+}
