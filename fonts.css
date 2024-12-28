@@ -1,8 +1,11 @@
 @font-face {
-    font-family: 'TeletactileRus';
-    src: url('fonts/TeletactileRus.ttf') format('truetype');
-    src: url('fonts/teletactilerus.woff2') format('woff2'),
-         url('fonts/teletactilerus.woff') format('woff');
+    font-family: 'TeletactileLatCyr';
+    src: url('/fonts/TeletactileLatCyr.eot');
+    src: url('/fonts/TeletactileLatCyr.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TeletactileLatCyr.woff2') format('woff2'),
+        url('fonts/TeletactileLatCyr.woff') format('woff'),
+        url('fonts/TeletactileLatCyr.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
